@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+
+h1 {
+    font-family: 'Germania One', Arial;
+    font-size:50px;
+    text-align:center; 
+    color:rgb(0, 0, 0)
+}
+
+div{
+    font-family: 'Germania One', Arial;
+    text-align:center; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size:25px;color:rgb(255, 215, 0)
+}
+
+h2{   
+    font-family: 'Germania One', Arial;
+    text-align:center; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color:rgb(255, 0, 0)
+}
+
+h3{    
+    font-family: 'Germania One', Arial;
+    text-align:center; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    font-size:25px;
+    color:rgb(255, 0, 0)
+}
+
+p { 
+    font-family: 'Germania One', Arial;
+	text-align: center;
+}
+
+.info{
+    overflow: hidden;
+    position: fixed;
+    position: absolute;
+    top: 45%;left: 50%;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #834141;
+    transform: translate(-50%, -50%);
+}
+
+button{
+    font-family: 'Germania One', Arial;
+    background-color: rgba(97, 95, 95, 0.438);
+    color: rgb(228, 195, 9);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    height: 7%;
+    width: 13,9%;
+    cursor: pointer;
+    font-size: larger;
+}
+
+body { 
+    background: no-repeat center/100% url("../BG/pirat.jpg");
+}
+
+
+#stroke{
+    color: rgb(255, 0, 0);
+    font-size:25px;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-align:center;
+}
+
+#stroke2{
+    color: rgb(255, 215, 0);
+    font-size:25px;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-align:center;
+}
