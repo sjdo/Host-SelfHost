@@ -51,19 +51,23 @@ p {
 }
 
 button{
+    text-align: center;
     font-family: 'Germania One', Arial;
     background-color: rgba(97, 95, 95, 0.438);
     color: rgb(228, 195, 9);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    -webkit-font-smoothing: antialiased;
     height: 7%;
     width: 13,9%;
-    cursor: pointer;
+    cursor: grab;
     font-size: larger;
 }
 
-body { 
+body {
     background: no-repeat center/100% url("../BG/pirat.jpg");
+    background-color: black;
+    
 }
 
 
@@ -72,6 +76,7 @@ body {
     font-size:25px;
 	-webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+    -webkit-font-smoothing: antialiased;
     text-align:center;
 }
 
@@ -80,5 +85,24 @@ body {
     font-size:25px;
 	-webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+    -webkit-font-smoothing: antialiased;
+    text-align:center;
+}
+
+#stroke3{
+    color: rgb(255, 0, 0);
+    font-size:25px;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-font-smoothing: antialiased;
+    text-align:center;
+}
+
+#stroke4{
+    color: rgb(255, 215, 0);
+    font-size:25px;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-font-smoothing: antialiased;
     text-align:center;
 }

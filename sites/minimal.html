@@ -1,0 +1,43 @@
+head>
+<title>Sjdo's PS4 9.00 FW Minimal Menu V2.0 Host</title>
+<link rel="shortcut icon" href="../favicon.ico"></link>
+<!--CSS-->
+<link rel="stylesheet" href="../css/index.css">
+<!--JavaScripts-->
+<script src="../JS/Function.js"></script>
+<script src="../JS/loadPayloadDATA.js"></script>
+<!--JavaScripts Jailbreak-->
+<script src="../JS/int64.js"></script>
+<script src="../JS/rop.js"></script>
+<script src="../JS/kexploit.js"></script>
+<script src="../JS/webkit.js"></script>
+</head>
+</head>
+<body>
+    <h1 id=msgs >Sjdo's PS4 9.00 FW Minimal Menu V2.0 Host</h1>
+      <h2>Pass = <span id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fail = <span id=failCounter></span></div>
+      <h2>  PS4 Firmware <span id="PS4fw"></span></div>
+      <h3>JAILBREAK / BIN LOADER / GOLDHEN</h3>
+      <p>
+      <button class="button" onMouseOver="msgs.innerHTML='Execute Webkit and Kernel Exploit Only!!!...'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Minimal Menu V2.0 Host'" onclick="load_jailbreak(); return false">Jailbreak-Only</button>
+      <button class="button" onMouseOver="msgs.innerHTML='Receives .Bin payloads on port 9020 via NetCat'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Minimal Menu V2.0 Host'" onclick="load_binloader(); return false">Binloader-9020</button>
+      <button class="button" onMouseOver="msgs.innerHTML='GoldHen v2.0b - By SiSTRo'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Minimal Menu V2.0 Host'" onclick="load_goldhen(); return false">GoldHen V2.0B</button>
+      <button class="button" onMouseOver="msgs.innerHTML='GoldHen v2.0b2 - By SiSTRo'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Minimal Menu V2.0 Host'" onclick="load_goldhenb2(); return false">GoldHen V2.0B2 (Latest)</button>
+      <br>
+      <p id="stroke2">Massive Thanks - Znullptr, ChendoChap, Specter, Sleirsgoevy, theflow0, SiSTRo, Al-Azif, PRB-Borg, Leeful, Nazky And Many More...</p>
+      <p id="stroke">Based on his Host: https://twitter.com/KameleonRe 
+      <p id="stroke">and on his Free host https://twitter.com/NazkyYT</p>
+      </div>
+      <script>
+        var UA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple')).replace("layStation 4/","");
+        if (UA == "9.00"){PS4fw.innerHTML="v"+UA+" Detected"};if(UA != "9.00"){PS4fw.innerHTML="Spoofed To v"+UA};
+        </script>
+        <script>
+        if (localStorage.passcount == null || localStorage.passcount == undefined) localStorage.passcount=0;
+         if (localStorage.passCounter == null || localStorage.passCounter == undefined ){
+          passCounter.innerHTML=localStorage.passcount;}
+        if (localStorage.failcount == null || localStorage.failcount == undefined) localStorage.failcount=0;
+         if (localStorage.failCounter == null || localStorage.failCounter == undefined ){
+          failCounter.innerHTML=localStorage.failcount;}
+    </script>
+    </body>
