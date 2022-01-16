@@ -1,156 +1,35 @@
 <html>
-  <html manifest="./cache.manifest"></html>
+<html manifest="./cache.manifest"></html>
 <head>
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-<title>Sjdo's PS4 9.00 FW Jailbreak V1.0 Host</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+<head>
+<title>Sjdo's PS4 9.00 FW Menu V2.0 Host</title>
 <link rel="shortcut icon" href="favicon.ico"></link>
+<!--CSS-->
 <link rel="stylesheet" href="css/index.css">
-
-
-
-<script>
-
-  function awaitpl() {
-  msgs.innerHTML= LoadedMSG;
- }
-function pldone() {
-  msgs.innerHTML= LoadedMSG;
-}
-
-function jailbreakdone(){
-  msgs.innerHTML= LoadedMSG;
-}
-
-//Stooged Bin Inject Method
-var payloadData = "";
-
-function loadPayloadData() // preload payload data
-{
-	if (PLfile)
-	{
-        
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', PLfile, true);
-        xhr.overrideMimeType('text/plain; charset=x-user-defined');
-        xhr.onload = function(e) {
-        if (this.status == 200) {
-            payloadData = this.response;
-            setTimeout(poc, 1500);
-        }
-        else
-        {
-			alert("Failed to load " + PLfile + " - " + this.status);
-      return;
-        }};
-        xhr.send();
-        
-	}
-}
-
-</script>
-<script src="JS/int64.js"></script>
-<script src="JS/rop.js"></script>
-<script src="JS/kexploit.js"></script>
-<script src="JS/webkit.js"></script>
-<script src="JS/main.js"></script>
-
 </head>
 
 <body>
-  <h1 id=msgs >Sjdo's PS4 9.00 FW Jailbreak V1.0 Host</h1>
-    <h2>Pass = <span id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fail = <span id=failCounter></span></div>
-      <div id=mymenu style="text-align:center"></div>
-    <h2>  PS4 Firmware <span id="PS4fw"></span></div>
-    <h3>JAILBREAK / BIN LOADER / GOLDHEN</h3>
-    <p>
-    <button class="button" onMouseOver="msgs.innerHTML='Execute Webkit and Kernel Exploit Only!!!...'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Jailbreak V1.0 Host'" onclick="load_jailbreak(); return false">Jailbreak-Only</button>
-    <button class="button" onMouseOver="msgs.innerHTML='Receives .Bin payloads on port 9020 via NetCat'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Jailbreak V1.0 Host'" onclick="load_binloader(); return false">Binloader-9020</button>
-    <button class="button" onMouseOver="msgs.innerHTML='GoldHen v2.0b - By SiSTRo'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Jailbreak V1.0 Host'" onclick="load_goldhen(); return false">GoldHen V2.0B</button>
-    <button class="button" onMouseOver="msgs.innerHTML='GoldHen v2.0b2 - By SiSTRo'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Jailbreak V1.0 Host'" onclick="load_goldhenb2(); return false">GoldHen V2.0B2 (Latest)</button>
-    <br><br>
-    <div>PAYLOADS</div>
+    <h1 id=msgs >Sjdo's PS4 9.00 FW Menu V2.0 Host</h1>
+    <b>
+    <b>
+    <b>
+    <b>
+        <h3>Whit Payload Sender</h3>
+    <p>        
+    <a href="./sites/haupt.html"><button class="button" type="button">Menu whit Payloads (its Slower)</button></a>
     <br>
-    <div>USE PAYLOAD GUEST, ITS BETTER!</div>
-    <br>
-    <div>LINUX VRAM LOADERS</div>
+    <b>
+    <div id="stroke4">USE PAYLOAD GUEST, ITS BETTER!</div>
+    <b>
+    <b>
+    <b>
+    <b>
+         <h3>Whitout Payloads</h3>
+    <p>        
+    <a href="./sites/minimal.html"><button class="button" type="button">Minimal Menu (its Faster)</button></a>
+    <p id="stroke4">Massive Thanks - Znullptr, ChendoChap, Specter, Sleirsgoevy, theflow0, SiSTRo, Al-Azif, PRB-Borg, Leeful, Nazky And Many More...</p>
+    <p id="stroke3">Based on his Host: https://twitter.com/KameleonRe 
+    <p id="stroke3">and on his Free host https://twitter.com/NazkyYT</p>
     <p>
-    <a href="payload.html#p0=JS/mira.js&p1=JS/pl_LinuxLoader.js">   <button class="button"  onMouseOver="msgs.innerHTML='Linux Loader 1gb Vram - By Nazky'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Jailbreak V1.0 Host'" type="button">Linux-1GB</button></a>
-    <a href="payload.html#p0=JS/mira.js&p1=JS/pl_LinuxLoader2gb.js"><button class="button"  onMouseOver="msgs.innerHTML='Linux Loader 2gb Vram - By Nazky'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Jailbreak V1.0 Host'" type="button">Linux-2GB</button></a>
-    <a href="payload.html#p0=JS/mira.js&p1=JS/pl_LinuxLoader3gb.js"><button class="button"  onMouseOver="msgs.innerHTML='Linux Loader 3gb Vram - By Nazky'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Jailbreak V1.0 Host'" type="button">Linux-3GB</button></a>
-    <a href="payload.html#p0=JS/mira.js&p1=JS/pl_LinuxLoader4gb.js"><button class="button"  onMouseOver="msgs.innerHTML='Linux Loader 4gb Vram - By Nazky'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Jailbreak V1.0 Host'" type="button">Linux-4GB</button></a>
-    <a href="payload.html#p0=JS/mira.js&p1=JS/pl_LinuxLoader5gb.js"><button class="button"  onMouseOver="msgs.innerHTML='Linux Loader 5gb Vram - By Nazky'"; onmouseout="msgs.innerHTML='Sjdos PS4 9.00 FW Jailbreak V1.0 Host'" type="button">Linux-5GB</button></a>
-    <br></p>
-    <p id="stroke2">Massive Thanks - Znullptr, ChendoChap, Specter, Sleirsgoevy, theflow0, SiSTRo, Al-Azif, PRB-Borg, Leeful, Nazky And Many More...</p>
-    <p id="stroke">Based on his Host: https://twitter.com/KameleonRe</p>
-    </div>
-    <script>
-    var UA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple')).replace("layStation 4/","");
-    if (UA == "9.00"){PS4fw.innerHTML="v"+UA+" Detected"};if(UA != "9.00"){PS4fw.innerHTML="Spoofed To v"+UA};
-    </script>
-    <script>
-    if (localStorage.passcount == null || localStorage.passcount == undefined) localStorage.passcount=0;
-     if (localStorage.passCounter == null || localStorage.passCounter == undefined ){
-      passCounter.innerHTML=localStorage.passcount;}
-    if (localStorage.failcount == null || localStorage.failcount == undefined) localStorage.failcount=0;
-     if (localStorage.failCounter == null || localStorage.failCounter == undefined ){
-      failCounter.innerHTML=localStorage.failcount;}
-</script>
-    </script>
-
-<script>
-var exec_type = "";
-
-function load_jailbreak(){
-  if (sessionStorage.jbdone != "yes" || sessionStorage.jbdone == undefined)
-  {
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Host Exploit...Please Wait For 20-30 seconds!!!</h1>";
-LoadedMSG="Jailbreak Loaded!!!... Wait For Memory Error And After Click OK..";
-exec_type = "jailbreak";
-setTimeout(poc, 1500);
-  }
-  else
-  {
-alert("You're Already Jailbroken!!!.. Please Launch Any Payload You Wish, You Don't Need Anymore USB Flash Drive!!!");
-return;
-  }
-}
-
-
-function load_goldhen(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.0B. Please wait 20-30 seconds!!!</h1>";
-LoadedMSG="GoldHen V2.0B Loaded";
-PLfile = "/Payload/pl_goldhen20b.bin";
-exec_type = "payload";
-loadPayloadData();
-}
-
-function load_goldhenb2(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.0B2. Please wait 20-30 seconds!!!</h1>";
-LoadedMSG="GoldHen V2.0B2 Loaded";
-PLfile = "/Payload/pl_goldhen20b2.bin";
-exec_type = "payload";
-loadPayloadData();
-}
-
-function load_binloader(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Bin Loader on Port 9020. Please wait 20-30 seconds!!!";
-LoadedMSG="Awaiting For Payload on Port 9020...";
-exec_type = "binloader";
-setTimeout(poc, 1500);
-}
-
-function load_webactivator(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading PSN Account Offline Web Activator. Please wait 20-30 seconds!!!</h1>";
-var link = document.createElement('a');
-document.body.appendChild(link);
-link.href = '900.html';
-link.click();
-}
-
-
-
-</script>
-    
-</body>
-
-</html>
+    <iframe src="./GIFS/ezgif-2-73d68c6636.gif" width=150 height=150 frameBorder="0" allowFullScreen></iframe>
