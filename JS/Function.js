@@ -43,7 +43,7 @@ setTimeout(poc, 1500);
 
 function load_Orbis(){
 msgs.innerHTML="Payload sending... please wait";
-PLfile = "/Payload/pl_OrbisToolbox.bin"
+PLfile = "../Payload/pl_OrbisToolbox.bin"
 LoadpaylodsGhen20(PLfile);
 }
 
@@ -97,49 +97,49 @@ LoadpaylodsGhen20(PLfile);
 
 function load_ps4debug(){
 msgs.innerHTML="Payload sending... please wait";
-PLfile = "/Payload/pl_kerneldumper.bin"
+PLfile = "/Payload/pl_ps4debug.bin"
 LoadpaylodsGhen20(PLfile);
 }
 
 function load_backup(){
 msgs.innerHTML="Payload sending... please wait";
-PLfile = "/Payload/pl_kerneldumper.bin"
+PLfile = "/Payload/pl_backup.bin"
 LoadpaylodsGhen20(PLfile);
 }
 
 function load_restore(){
 msgs.innerHTML="Payload sending... please wait";
-PLfile = "/Payload/pl_kerneldumper.bin"
+PLfile = "/Payload/pl_restore.bin"
 LoadpaylodsGhen20(PLfile);
 }
 
 function load_todex(){
 msgs.innerHTML="Payload sending... please wait";
-PLfile = "/Payload/pl_kerneldumper.bin"
+PLfile = "/Payload/pl_todex.bin"
 LoadpaylodsGhen20(PLfile);
 }
 
 function load_webrte(){
 msgs.innerHTML="Payload sending... please wait";
-PLfile = "/Payload/pl_kerneldumper.bin"
+PLfile = "/Payload/pl_webrte.bin"
 LoadpaylodsGhen20(PLfile);
 }
 
 function load_uart(){
 msgs.innerHTML="Payload sending... please wait";
-PLfile = "/Payload/pl_kerneldumper.bin"
+PLfile = "/Payload/pl_permanentuart.bin"
 LoadpaylodsGhen20(PLfile);
 }
 
 function load_disableaslr(){
 msgs.innerHTML="Payload sending... please wait";
-PLfile = "/Payload/pl_kerneldumper.bin"
+PLfile = "/Payload/pl_disbleaslr.bin"
 LoadpaylodsGhen20(PLfile);
 }
 
 function load_moduledumper(){
 msgs.innerHTML="Payload sending... please wait";
-PLfile = "/Payload/pl_kerneldumper.bin"
+PLfile = "/Payload/pl_moduledumper.bin"
 LoadpaylodsGhen20(PLfile);
 }
                                                                         
