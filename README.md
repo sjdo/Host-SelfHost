@@ -7,4 +7,4 @@ Based on his Host: https://twitter.com/KameleonRe
 and on his Free host https://twitter.com/NazkyYT
 
 For the Guys the a too Lazy to self Host you can use this:
-          http://psvierhost.byethost7.com/?i=1
+          http://psvierhost.byethost7.com/
