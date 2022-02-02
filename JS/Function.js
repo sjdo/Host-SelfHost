@@ -33,6 +33,14 @@ PLfile = "/Payload/pl_goldhen20b2.bin";
 exec_type = "payload";
 loadPayloadData();
 }
+
+function load_goldhenb2(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.1. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="GoldHen V2.0B2 Loaded";
+PLfile = "/Payload/pl_goldhen21.bin";
+exec_type = "payload";
+loadPayloadData();
+}
   
 function load_binloader(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Bin Loader on Port 9020. Please wait 20-30 seconds!!!";
