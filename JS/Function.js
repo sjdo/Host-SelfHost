@@ -19,25 +19,17 @@ var exec_type = "";
 
 //Button Function
 function load_goldhen(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.0B. Please wait 20-30 seconds!!!</h1>";
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.1.1 Please wait 20-30 seconds!!!</h1>";
 LoadedMSG="GoldHen V2.0B Loaded";
-PLfile = "/Payload/pl_goldhen20b.bin";
-exec_type = "payload";
-loadPayloadData();
-}
-  
-function load_goldhenb2(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.0B2. Please wait 20-30 seconds!!!</h1>";
-LoadedMSG="GoldHen V2.0B2 Loaded";
-PLfile = "/Payload/pl_goldhen20b2.bin";
+PLfile = "/Payload/pl_goldhen21.bin";
 exec_type = "payload";
 loadPayloadData();
 }
 
 function load_goldhenb2(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.1. Please wait 20-30 seconds!!!</h1>";
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.1.2 Please wait 20-30 seconds!!!</h1>";
 LoadedMSG="GoldHen V2.0B2 Loaded";
-PLfile = "/Payload/pl_goldhen21.bin";
+PLfile = "/Payload/pl_goldhen212.bin";
 exec_type = "payload";
 loadPayloadData();
 }
@@ -72,7 +64,13 @@ msgs.innerHTML="Payload sending... please wait";
 PLfile = "/Payload/pl_enableupdates.bin"
 LoadpaylodsGhen20(PLfile);
 }
- 
+
+function disable_updates(){
+msgs.innerHTML="Payload sending... please wait";
+PLfile = "/Payload/pl_disableupdates.bin"
+LoadpaylodsGhen20(PLfile);
+}
+
 function exit_idu(){
 msgs.innerHTML="Payload sending... please wait";
 PLfile = "/Payload/pl_exitidu.bin"
