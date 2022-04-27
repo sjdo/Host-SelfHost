@@ -19,20 +19,21 @@ var exec_type = "";
 
 //Button Function
 function load_goldhen(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.1.1 Please wait 20-30 seconds!!!</h1>";
-LoadedMSG="GoldHen V2.0B Loaded";
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.0B. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="GoldHen V2.1.2 Loaded";
 PLfile = "/Payload/pl_goldhen21.bin";
 exec_type = "payload";
 loadPayloadData();
 }
-
-function load_goldhenb2(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.1.2 Please wait 20-30 seconds!!!</h1>";
-LoadedMSG="GoldHen V2.0B2 Loaded";
-PLfile = "/Payload/pl_goldhen212.bin";
+  
+function load_goldhen2(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.0B2. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="GoldHen V2.2.2 Loaded";
+PLfile = "/Payload/pl_goldhen222.bin";
 exec_type = "payload";
 loadPayloadData();
 }
+
   
 function load_binloader(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Bin Loader on Port 9020. Please wait 20-30 seconds!!!";
@@ -64,13 +65,7 @@ msgs.innerHTML="Payload sending... please wait";
 PLfile = "/Payload/pl_enableupdates.bin"
 LoadpaylodsGhen20(PLfile);
 }
-
-function disable_updates(){
-msgs.innerHTML="Payload sending... please wait";
-PLfile = "/Payload/pl_disableupdates.bin"
-LoadpaylodsGhen20(PLfile);
-}
-
+ 
 function exit_idu(){
 msgs.innerHTML="Payload sending... please wait";
 PLfile = "/Payload/pl_exitidu.bin"
@@ -146,6 +141,12 @@ LoadpaylodsGhen20(PLfile);
 function load_moduledumper(){
 msgs.innerHTML="Payload sending... please wait";
 PLfile = "/Payload/pl_moduledumper.bin"
+LoadpaylodsGhen20(PLfile);
+}
+
+function load_mira(){
+msgs.innerHTML="Payload sending... please wait";
+PLfile = "/Payload/pl_mira.bin"
 LoadpaylodsGhen20(PLfile);
 }
                                                                         
